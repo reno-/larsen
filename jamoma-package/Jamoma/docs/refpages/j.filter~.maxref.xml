@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<!--Data marked TEXT_HERE, INLET_TYPE, OUTLET_TYPE, ARG_NAME and ARG_TYPE need to be filled in-->
+<c74object name="j.filter~" module="" category="Jamoma">
+	<digest>
+		A collection of audio filters
+	</digest>
+	<description>
+		A collection of audio filters
+	</description>
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">
+			Jamoma
+		</metadata>
+		<metadata name="tag">
+			filter
+		</metadata>
+		<metadata name="tag">
+			Jamoma
+		</metadata>
+	</metadatalist>
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>
+				input 1, control messages
+			</digest>
+			<description>
+				TEXT_HERE
+			</description>
+		</inlet>
+		<inlet id="1" type="signal">
+			<digest>
+				input 2
+			</digest>
+			<description>
+				TEXT_HERE
+			</description>
+		</inlet>
+		<inlet id="2" type="signal">
+			<digest>
+				Frequency
+			</digest>
+			<description>
+				TEXT_HERE
+			</description>
+		</inlet>
+		<inlet id="3" type="signal">
+			<digest>
+				Q-value
+			</digest>
+			<description>
+				TEXT_HERE
+			</description>
+		</inlet>
+	</inletlist> -->
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>
+				Filtered output 1
+			</digest>
+			<description>
+				TEXT_HERE
+			</description>
+		</outlet>
+		<outlet id="1" type="signal">
+			<digest>
+				Filtered output 2
+			</digest>
+			<description>
+				TEXT_HERE
+			</description>
+		</outlet>
+		<outlet id="2" type="signal">
+			<digest>
+				dumpout
+			</digest>
+			<description>
+				TEXT_HERE
+			</description>
+		</outlet> -->
+	</outletlist>
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg id="0" name="channels" type="OBJARG_TYPE" optional="0">
+			<digest>
+				Number of audio channels
+			</digest>
+			<description>
+				Number of audio channels
+			</description>
+		</objarg>
+	</objarglist>
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="clear">
+			<arglist />
+			<digest>
+				Clear the filter
+			</digest>
+			<description>
+				Clear the filter in case it exploded
+			</description>
+		</method>
+		<method name="getTypes">
+			<arglist />
+			<digest>
+				Output a list of available filters
+			</digest>
+			<description>
+				Output a list of available filters
+			</description>
+		</method>
+		<method name="signal">
+			<arglist />
+			<digest>
+				Audio input
+			</digest>
+			<description>
+				Audio input
+			</description>
+		</method>
+	</methodlist>
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="bypass" get="1" set="1" type="int" size="1">
+			<digest>
+				BYpass the j.filter~
+			</digest>
+			<description>
+				BYpass the j.filter~
+			</description>
+			<attributelist>
+				<attribute name="style" get="1" set="1" type="symbol" size="1" value="onoff" />
+			</attributelist>
+		</attribute>
+		<attribute name="frequency" get="1" set="1" type="float" size="1">
+			<digest>
+				Set the filter cutoff frequency
+			</digest>
+			<description>
+				Set the filter cutoff frequency
+			</description>
+		</attribute>
+		<attribute name="mode" get="1" set="1" type="symbol" size="1">
+			<digest>
+				Set the filter mode: lowpass, highpass, bandpass or notch
+			</digest>
+			<description>
+				Set the filter mode: lowpass, highpass, bandpass or notch
+			</description>
+		</attribute>
+		<attribute name="q" get="1" set="1" type="float" size="1">
+			<digest>
+				Set the filter gain
+			</digest>
+			<description>
+				Set the filter gain
+			</description>
+		</attribute>
+		<attribute name="type" get="1" set="1" type="symbol" size="1">
+			<digest>
+				Set the type of the filter
+			</digest>
+			<description>
+				Set the type of the filter
+			</description>
+		</attribute>
+	</attributelist>
+	<!--EXAMPLE-->
+	<examplelist>
+		<example caption="" img="" />
+	</examplelist>
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="j.filter="/>
+		<seealso name="equalizer~.model"/>
+		<seealso name="biquad~"/>
+		<seealso name="filtergraph~"/>
+	</seealsolist>
+</c74object>
