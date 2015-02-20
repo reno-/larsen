@@ -76,8 +76,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 460.5, 109.0, 129.0, 20.0 ],
-					"text" : "del 40"
+					"patching_rect" : [ 460.5, 109.0, 50.0, 20.0 ],
+					"text" : "del 300"
 				}
 
 			}
@@ -104,8 +104,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 503.0, 155.0, 129.0, 20.0 ],
-					"text" : "del 40"
+					"patching_rect" : [ 503.0, 155.0, 50.0, 20.0 ],
+					"text" : "del 300"
 				}
 
 			}
@@ -313,8 +313,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 595.0, 51.0, 129.0, 20.0 ],
-					"text" : "qmetro 100 @active 1"
+					"patching_rect" : [ 595.0, 51.0, 136.0, 20.0 ],
+					"text" : "qmetro 1000 @active 1"
 				}
 
 			}
